@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Elements</h1>
+
+    <section>
+        <div>
+            <h3>Button Click</h3>
+            <button id="clickButton">Click Me</button>
+            <p id="clickOutput"></p>
+        </div>
+
+        <div>
+            <h3>Hover Effect</h3>
+            <div id="hoverArea">Hover Over Me</div>
+            <p id="hoverOutput"></p>
+        </div>
+
+        <div>
+            <h3>Keypress Detection</h3>
+            <input type="text" id="keypressInput" placeholder="Type something here">
+            <p id="keypressOutput"></p>
+        </div>
+
+        <div>
+            <h3>Secret Action (Double Click)</h3>
+            <button id="secretButton">Double Click Me!</button>
+            <p id="secretOutput"></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Interactive Elements</h2>
+        <div>
+            <h3>Button Changes Text/Color</h3>
+            <button id="changeButton">Change Me</button>
+            <p id="changeOutput"></p>
+        </div>
+
+        <div>
+            <h3>Image Gallery / Slideshow (Basic - just changing image source on button click)</h3>
+            <div id="imageGallery">
+                <img id="galleryImage" src="pic1.jpg" alt="Gallery Image">
+                <button id="prevImage">Previous</button>
+                <button id="nextImage">Next</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Tabs or Accordion-Style Content (Basic Tabs)</h3>
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-button" data-tab="tab2">Tab 2</button>
+                    <button class="tab-button" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content active" id="tab1-content">Content for Tab 1</div>
+                <div class="tab-content" id="tab2-content">Content for Tab 2</div>
+                <div class="tab-content" id="tab3-content">Content for Tab 3</div>
+            </div>
+        </div>
+
+        <div id="animatedBox">Hover Me to Animate</div>
+    </section>
+
+    <section>
+        <h2>Form Validation</h2>
+        <form id="myForm">
+            <div>
+                <label for="requiredField">Required Field:</label>
+                <input type="text" id="requiredField" required>
+                <p class="error-message" id="requiredFieldError"></p>
+            </div>
+            <div>
+                <label for="emailField">Email:</label>
+                <input type="email" id="emailField">
+                <p class="error-message" id="emailFieldError"></p>
+            </div>
+            <div>
+                <label for="passwordField">Password (min 8 characters):</label>
+                <input type="password" id="passwordField">
+                <p class="error-message" id="passwordFieldError"></p>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="formOutput"></div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
